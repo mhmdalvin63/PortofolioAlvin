@@ -1,0 +1,24 @@
+h1{
+  font-size: calc(70% + 3vmin)!important;
+}
+h2{
+  font-size: calc(70% + 2vmin)!important;
+}
+h3{
+  font-size: calc(70% + 1vmin)!important;
+}
+h4{
+  font-size: calc(70% + .5vmin)!important;
+}
+p{
+  font-size: calc(70% + 1vmin);
+  margin-bottom: 0!important;
+}
+p.sm{
+  font-size: calc(70% + .5vmin);
+  margin-bottom: 0!important;
+}
+p.xs{
+  font-size: calc(70% + .10vmin);
+  margin-bottom: 0!important;
+}
