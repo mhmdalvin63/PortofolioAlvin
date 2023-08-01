@@ -1,6 +1,9 @@
-// import digitalClock from '../../../assets/js/realTime.js';
+import '../../../assets/css/navbar.css';
+
 import React, { useState, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '../../../assets/images/logo-remover.png';
+
 // React Bootstrap CONTAINER, ROW, COL 
 import {Container} from 'react-bootstrap';
 // Font Awesome
@@ -23,12 +26,33 @@ function Navigasi() {
     return time.toLocaleTimeString([], { hour12: false });
   };
 
+  // State to track whether the user is scrolling
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  // Function to handle scrolling and set the isScrolling state accordingly
+  const handleScroll = () => {
+    if (window.scrollY > 600) {
+      setIsScrolling(true);
+    } else {
+      setIsScrolling(false);
+    }
+  };
+
+  // Add a scroll event listener when the component mounts
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <Navbar bg="transparent" fixed='top'>
+    <Navbar fixed='top' className={isScrolling ? 'navbar scrolled' : 'navbar'}>
       <Container>
-        <Navbar.Brand href="#home" className='text-white'>
-          <h2>Muhammad Alvin</h2>
+        <Navbar.Brand href="#home" className='text-white parImg'>
+          <img className='logo' src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
