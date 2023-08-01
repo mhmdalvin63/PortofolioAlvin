@@ -18,7 +18,7 @@ function experience() {
                         <h2 className='mb-1'>EXPERIENCE</h2>
                         <FontAwesomeIcon icon={faShoePrints} />
                     </div>
-                    <Row className='mt-3 parentOfExperience' sm={3}>
+                    <Row className='mt-3 parentOfExperience' xs={2} md={2} lg={3}>
                         <Col className='mt-4'>
                             <div className='bordered px-4 py-3'>
                                 <div className='title_bordered'>

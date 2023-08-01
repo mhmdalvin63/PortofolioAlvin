@@ -1,24 +1,112 @@
-h1{
-  font-size: calc(70% + 3vmin)!important;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: calc(40% + 3vmin)!important;
+  }
+  h2{
+    font-size: calc(40% + 2vmin)!important;
+  }
+  h3{
+    font-size: calc(40% + 1vmin)!important;
+  }
+  h4{
+    font-size: calc(40% + .5vmin)!important;
+  }
+  p{
+    font-size: calc(40% + 1vmin);
+    margin-bottom: 0!important;
+  }
+  p.sm{
+    font-size: calc(40% + .5vmin);
+    margin-bottom: 0!important;
+  }
+  p.xs{
+    font-size: calc(40% + .10vmin);
+    margin-bottom: 0!important;
+  }
 }
-h2{
-  font-size: calc(70% + 2vmin)!important;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1{
+    font-size: calc(50% + 3vmin)!important;
+  }
+  h2{
+    font-size: calc(50% + 2vmin)!important;
+  }
+  h3{
+    font-size: calc(50% + 1vmin)!important;
+  }
+  h4{
+    font-size: calc(50% + .5vmin)!important;
+  }
+  p{
+    font-size: calc(50% + 1vmin);
+    margin-bottom: 0!important;
+  }
+  p.sm{
+    font-size: calc(50% + .5vmin);
+    margin-bottom: 0!important;
+  }
+  p.xs{
+    font-size: calc(50% + .10vmin);
+    margin-bottom: 0!important;
+  }
 }
-h3{
-  font-size: calc(70% + 1vmin)!important;
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: calc(50% + 3vmin)!important;
+  }
+  h2{
+    font-size: calc(50% + 2vmin)!important;
+  }
+  h3{
+    font-size: calc(50% + 1vmin)!important;
+  }
+  h4{
+    font-size: calc(50% + .5vmin)!important;
+  }
+  p{
+    font-size: calc(50% + 1vmin);
+    margin-bottom: 0!important;
+  }
+  p.sm{
+    font-size: calc(50% + .5vmin);
+    margin-bottom: 0!important;
+  }
+  p.xs{
+    font-size: calc(50% + .10vmin);
+    margin-bottom: 0!important;
+  }
 }
-h4{
-  font-size: calc(70% + .5vmin)!important;
-}
-p{
-  font-size: calc(70% + 1vmin);
-  margin-bottom: 0!important;
-}
-p.sm{
-  font-size: calc(70% + .5vmin);
-  margin-bottom: 0!important;
-}
-p.xs{
-  font-size: calc(70% + .10vmin);
-  margin-bottom: 0!important;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 992px) {
+  h1{
+    font-size: calc(70% + 3vmin)!important;
+  }
+  h2{
+    font-size: calc(70% + 2vmin)!important;
+  }
+  h3{
+    font-size: calc(70% + 1vmin)!important;
+  }
+  h4{
+    font-size: calc(70% + .5vmin)!important;
+  }
+  p{
+    font-size: calc(70% + 1vmin);
+    margin-bottom: 0!important;
+  }
+  p.sm{
+    font-size: calc(70% + .5vmin);
+    margin-bottom: 0!important;
+  }
+  p.xs{
+    font-size: calc(70% + .10vmin);
+    margin-bottom: 0!important;
+  }
 }
