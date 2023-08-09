@@ -1,3 +1,13 @@
+.listSkill:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    transition: all 0.25s ease-in-out;
+}
+.listSkill{
+    transition: all 0.5s ease-in-out;
+}
 .skills{
     background-color: #1F1E21;
 }
@@ -9,16 +19,31 @@
 }
 .parent_img{
     position: relative;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
 }
 .parent_img img{
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width: 425px) {
+    .parent_img{
+        height: 7rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .parent_img img{
+        width: 75%;
+    }
 }
 .persen{
     position: absolute;
-    height: 40%;
-    width: 40%;
+    padding: 11% 10%;
+    /* height: 40%;
+    width: 40%; */
     right: 0;
     bottom: 0;
     border-radius: 50%;
@@ -30,4 +55,7 @@
 }
 .description p{
     color: grey;
+}
+.description h3{
+    margin: .5rem 0;
 }

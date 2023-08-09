@@ -64,6 +64,10 @@ ul.timeline > li:before {
     background-color: #4F4557;
     border-radius: 20px;
 }
+.badmintonIcon{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+}
 .outline-primary{
     border-radius: 0!important;
 }
