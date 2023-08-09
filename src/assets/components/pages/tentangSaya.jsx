@@ -2,16 +2,16 @@ import '../../../assets/css/tentangSaya.css';
 // import Maxword from '../../../assets/js/maxWord';
 // import { Helmet } from 'react-helmet';
 
+import badmintonIcon from '../../../assets/images/badmintonIcon.png';
+
 // React Bootstrap CONTAINER, ROW, COL 
 import {Container, Row, Col} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
-import { faMugHot } from '@fortawesome/free-solid-svg-icons';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { Helmet } from 'react-helmet';
+import { faCircleInfo, faDownload, faMugHot, faJoint, faPersonSwimming } from '@fortawesome/free-solid-svg-icons';
+// import { Helmet } from 'react-helmet';
 
 function tentangSaya() {
   return(
@@ -58,7 +58,7 @@ function tentangSaya() {
                     <div className='subTitle_ts px-3 py-1 '>
                         <h2 className='mb-1'>Kesukaan Saya</h2>
                     </div>
-                    <div className='ks_list d-flex gap-2 mt-3'>
+                    <div className='ks_list d-flex justify-content-md-start justify-content-center gap-2 mt-3'>
                         <div>
                             <div className='ks_content px-2 py-3 text-center'> 
                                 <FontAwesomeIcon icon={faMugHot} size='2xl' />
@@ -67,37 +67,25 @@ function tentangSaya() {
                         </div>
                         <div>
                             <div className='ks_content px-2 py-3 text-center'> 
-                                <FontAwesomeIcon icon={faMugHot} size='2xl' />
-                                <p className='mt-2'>Kopi</p>
+                                <FontAwesomeIcon icon={faJoint} size='2xl' />
+                                <p className='mt-2'>Rokok</p>
                             </div>
                         </div>
                         <div>
                             <div className='ks_content px-2 py-3 text-center'> 
-                                <FontAwesomeIcon icon={faMugHot} size='2xl' />
-                                <p className='mt-2'>Kopi</p>
+                                <FontAwesomeIcon icon={faPersonSwimming} size='2xl' />
+                                <p className='mt-2'>Berenang</p>
                             </div>
                         </div>
                         <div>
                             <div className='ks_content px-2 py-3 text-center'> 
-                                <FontAwesomeIcon icon={faMugHot} size='2xl' />
-                                <p className='mt-2'>Kopi</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='ks_content px-2 py-3 text-center'> 
-                                <FontAwesomeIcon icon={faMugHot} size='2xl' />
-                                <p className='mt-2'>Kopi</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='ks_content px-2 py-3 text-center'> 
-                                <FontAwesomeIcon icon={faMugHot} size='2xl' />
-                                <p className='mt-2'>Kopi</p>
+                                <img className='badmintonIcon' src={badmintonIcon} alt="badmintonIcon" />
+                                <p className='mt-2'>Badminton</p>
                             </div>
                         </div>
                     </div>
                 </Col>
-                <Col className='d-flex justify-content-center'>
+                <Col className='d-flex justify-content-center mt-md-0 mt-3'>
                     <Button variant="outline-primary text-white d-flex align-items-center gap-2 px-5">
                         <p className='sm'>Download CV</p>
                         <FontAwesomeIcon icon={faDownload} />
