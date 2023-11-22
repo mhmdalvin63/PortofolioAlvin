@@ -15,7 +15,7 @@ import { faCircleInfo, faDownload, faMugHot, faJoint, faPersonSwimming } from '@
 
 function tentangSaya() {
   return(
-    <div className='tentangSaya py-5 text-white' id='tentangSayaID'>
+    <div className='tentangSaya text-white' id='tentangSayaID'>
         <Container>
             <Row>
                 <Col xs={12}>
